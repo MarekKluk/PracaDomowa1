@@ -1,0 +1,42 @@
+
+.body{
+    display: flex;
+    flex-direction: column;
+    width: 2480px;
+    height: 3508px;
+}
+.resume{
+    display: flex;
+    flex-direction: row;
+    width: 2480px;
+    height: 3508px;
+}
+
+.first-impression {
+    display: flex;
+    position: absolute;
+    width: 20%;
+    height: 10%;
+    border: double;
+}
+.first-impression-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.resume-left{
+    background-color: dimgray;
+    width:30%;
+}
+.resume-left-margin{
+    margin-top:40%;
+    margin-left:15%;
+    margin-right:15%;
+}
+.resume-right{
+    background-color: cornflowerblue;
+    width:70%;
+}
