@@ -1,42 +1,233 @@
-
 .body{
     display: flex;
     flex-direction: column;
-    width: 2480px;
-    height: 3508px;
+    background-color: #f8f8ff;
+    /* to centre page on screen*/
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto Flex', sans-serif;
 }
+
 .resume{
+    margin: 0 auto;
+    width:21cm;
+    height: 29.7cm;
     display: flex;
     flex-direction: row;
-    width: 2480px;
-    height: 3508px;
+    background: #f8f8ff;
 }
 
 .first-impression {
     display: flex;
     position: absolute;
-    width: 20%;
-    height: 10%;
+    justify-content: center;
+    width: 400px;
+    height: 150px;
+    background: white;
+    margin-left: 420px;
+    margin-top: 20px;
     border: double;
 }
 .first-impression-wrap{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
 
 }
-
+.info-order{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 23px;
+}
 .resume-left{
-    background-color: dimgray;
-    width:30%;
+    background-color: beige;
+    width: 35%;
 }
 .resume-left-margin{
-    margin-top:40%;
-    margin-left:15%;
-    margin-right:15%;
+    margin-top:200px;
+    margin-left:5%;
+    margin-right:5%;
+    width: 95%;
 }
+.title-of-section{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    width:100%;
+}
+.section-name-with-border{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    width:240px;
+    margin-bottom: 10px;
+}
+.section-with-border-right{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    width:480px;
+    margin-bottom: 10px;
+}
+.address{
+    width: 90%;
+    display:flex;
+    gap:0;
+
+}
+
+.phone{
+    width: 90%;
+    display:flex;
+    gap:0;
+}
+.E-mail{
+    width: 100%;
+    display:flex;
+    gap:0;
+}
+
+.skills{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.skill-section{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    line-height:1cm;
+}
+.skill-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.skill-name{
+    width:25%;
+}
+.skill-progress{
+    width:50%;
+    margin: 0 5px;
+    height: 5px;
+    background: black;
+    position: relative;
+}
+.skill-percent{
+    width:15%;
+}
+.skill-progress span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: lightskyblue;
+}
+
+.languages-section{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+}
+.hobbies span{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+}
+
 .resume-right{
-    background-color: cornflowerblue;
     width:70%;
+}
+.resume-right-margin{
+    margin-top:200px;
+    margin-left:5%;
+    margin-right:5%;
+}
+.title-of-section-right{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    width: 700px;
+
+}
+.right-section-order{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+}
+.bachelors-degree{
+    width: 100%;
+    display:flex;
+    gap:30px;
+}
+.masters-degree{
+    width: 100%;
+    display:flex;
+    gap:30px;
+}
+
+.job-name-and-employer ul li{
+    display: list-item;
+    flex-direction: column;
+    width: 100%;
+    gap:30px;
+    list-style-type:circle;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+}
+.job-name-and-employer-wrap{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.job-name{
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 23px;
+}
+.job-time{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+}
+.company{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.projects ul li{
+    display: list-item;
+    flex-direction: column;
+    width: 100%;
+    gap:30px;
+    list-style-type:circle;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 23px;
+}
+.projects ul li ul li{
+    display: list-item;
+    flex-direction: column;
+    width: 100%;
+    gap:30px;
+    list-style-type: disc;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+}
+.footer-content{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
 }
