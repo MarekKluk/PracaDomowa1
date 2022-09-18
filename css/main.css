@@ -1,9 +1,7 @@
-
 .body{
     display: flex;
     flex-direction: column;
     background-color: #f8f8ff;
-    /* to centre page on screen*/
     margin-left: auto;
     margin-right: auto;
     font-family: 'Roboto Flex', sans-serif;
@@ -17,6 +15,7 @@
     font-size: 18px;
 }
 .resume{
+    box-sizing: border-box;
     margin: 0 auto;
     width:21cm;
     height: 29.7cm;
@@ -24,30 +23,41 @@
     flex-direction: row;
     background: #f8f8ff;
 }
-
+@media (max-width: 800px) {
+    .first-impression {
+        position: fixed;
+    }
+}
+@media (min-width: 800px) {
+    .first-impression {
+        position: absolute;
+    }
+}
 .first-impression {
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 20px;
     display: flex;
-    position: absolute;
+    transform: translate(-50%);
     justify-content: center;
     width: 400px;
     height: 150px;
     background: white;
-    margin-left: 420px;
-    margin-top: 20px;
     border: double;
+    left: 50%;
 }
-.first-impression-wrap{
+.first-impression-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 .info-order{
     font-weight: 300;
     line-height: 23px;
 }
 .resume-left{
+    box-sizing: border-box;
     background-color: beige;
     width: 35%;
 }
@@ -152,6 +162,7 @@
 }
 
 .resume-right{
+    box-sizing: border-box;
     width:70%;
 }
 
@@ -228,6 +239,9 @@
     list-style-type: disc;
     font-weight: 400;
     line-height: 23px;
+}
+.footer {
+    margin-top: auto;
 }
 .footer-content{
     display: flex;
